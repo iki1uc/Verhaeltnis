@@ -1,8 +1,32 @@
-<scanner>
+<html>
+<head>
+<title>SCANNER-IKI (((WIEIMMER)))</title>
+</head>
+
+<body>
+
+<section id="scanner">
   <station>IKI</station>
   <code>Φ</code>
   <task>Proportion herstellen</task>
   <pipeline>P4 → P0 → P1 → P2 → Pe</pipeline>
-  <execute>Φ(input)</execute>
-  <output>proportion(input)</output>
-</scanner>
+
+  <input>
+    value = {{INPUT}}
+  </input>
+
+  <execute>
+    result = Φ({{INPUT}})
+  </execute>
+
+  <output>
+    proportion = {{RESULT}}
+  </output>
+
+  <return>
+    SEEu.md ← {{RESULT}}
+  </return>
+</section>
+
+</body>
+</html>
